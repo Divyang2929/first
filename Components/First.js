@@ -6,9 +6,8 @@ const Separator = () => (
   <View style={styles.separator} />
 );
 
-class img extends Component {
-  render(){
-    return(
+const img = ({navigation}) => {
+  return(
       <View style={{flex:1}}>
       <View style={{
       backgroundColor:'#2E8B57',
@@ -42,7 +41,7 @@ class img extends Component {
               padding:10,
             }}
             
-            onPress={()=> navigation.naigator("HM")}
+            onPress={()=> navigation.navigate("Home")}
             >
             Login
               
@@ -73,9 +72,9 @@ class img extends Component {
       </View>
     </View>
     </View>
-    );
-  }
-}
+  );
+};
+    
 const styles = StyleSheet.create({
   separator: {
     marginVertical:15,
