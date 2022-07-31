@@ -15,7 +15,7 @@ const Mystack =()=> {
         component={img}/>
 
         <Stack.Screen
-        name='HM'
+        name='Home'
         component={ak}/>
 
 
